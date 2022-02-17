@@ -20,10 +20,10 @@ angular.module('insight.currency', ['ui.router', 'ui.bootstrap']).controller('Cu
 
                 if (this.symbol === 'USD' || this.symbol === 'EUR' || this.symbol === 'GBP') {
                     response = _roundFloat((value * this.factor), 2);
-                } else if (this.symbol === 'mDASH') {
+                } else if (this.symbol === 'mBUTK') {
                     this.factor = 1000;
                     response = _roundFloat((value * this.factor), 5);
-                } else if (this.symbol === 'uDASH') {
+                } else if (this.symbol === 'uBUTK') {
                     this.factor = 1000000;
                     response = _roundFloat((value * this.factor), 2);
                 } else if (this.symbol === 'duffs') {
@@ -60,11 +60,11 @@ angular.module('insight.currency', ['ui.router', 'ui.bootstrap']).controller('Cu
                 Currency.get({}, function(res) {
                     $rootScope.currency.factor = $rootScope.currency.bitstamp = res.data.bitstamp / 1.31;
                 });
-            } else if (currency === 'mDASH') {
+            } else if (currency === 'mBUTK') {
                 $rootScope.currency.factor = 1000;
             } else if (currency === 'duffs') {
                 $rootScope.currency.factor = 100000000;
-            } else if (currency === 'uDASH') {
+            } else if (currency === 'uBUTK') {
                 $rootScope.currency.factor = 1000000;
             } else {
                 $rootScope.currency.factor = 1;

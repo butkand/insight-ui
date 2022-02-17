@@ -62,14 +62,14 @@
               <span data-ng-show="tx.vin.length === 1 && tx.vout.length === 1 && tx.fees === 0.00000192" style="background-color: #ffe0ff">Stresstest</span>
               <span data-ng-show="tx.knownaddress && tx.knownaddress.length > 0" style="background-color: #e0ffff">{{tx.knownaddress}}</span>
             </td>
-            <td class="text-right"><span class="ellipsis">{{$root.currency.getConvertion(tx.valueOut) || tx.valueOut + ' DASH'}}</span></td>
+            <td class="text-right"><span class="ellipsis">{{$root.currency.getConvertion(tx.valueOut) || tx.valueOut + ' BUTK'}}</span></td>
           </tr>
           </tbody>
         </table>
       </div>
 
       <div class="col-xs-12 col-md-4 col-gray">
-        <a href="https://dash.org" target="_blank"><img src='./img/dash_about.jpg' alt="About Dash" style='max-width:360px;' /></a>
+        <a href="https://butcoin.tech" target="_blank"><img src='./img/dash_about.jpg' alt="About BUTK" style='max-width:360px;' /></a>
         <div id="powered" class="row">
           <div class="powered-text">
             <small class="text-muted" translate>Powered by</small>
