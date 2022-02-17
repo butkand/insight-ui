@@ -49,10 +49,10 @@
       <strong>Superblock</strong>
     </div>
     <div data-ng-show="(tx.vout.length >= 1 && tx.vout[0].value === 1000) || (tx.vout.length >= 2 && tx.vout[1].value === 1000)">
-      <strong>Masternode creation</strong>
+      <strong>Smartnode creation</strong>
     </div>
     <div data-ng-show="tx.vin.length >= 1 && tx.vin[0].value >= 1000">
-      <strong>Masternode destruction</strong>
+      <strong>Smartnode destruction</strong>
     </div>
     <div data-ng-show="tx.op_return_message && tx.op_return_message.length > 0">
       <strong>OP_RETURN {{tx.op_return_message}}</strong>

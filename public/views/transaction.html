@@ -104,11 +104,11 @@
           <td class="text-muted text-right">{{tx.isCoinBase && tx.vout.length > 2 && tx.vout[0].value >= 1.7}}</td>
         </tr>
         <tr data-ng-show="(tx.vout.length >= 1 && tx.vout[0].value === 1000) || (tx.vout.length >= 2 && tx.vout[1].value === 1000)">
-          <td style="background-color: #bfbfff"><strong>Masternode creation</strong></td>
+          <td style="background-color: #bfbfff"><strong>Smartnode creation</strong></td>
           <td class="text-muted text-right">{{(tx.vout.length >= 1 && tx.vout[0].value === 1000) || (tx.vout.length >= 2 && tx.vout[1].value === 1000)}}</td>
         </tr>
         <tr data-ng-show="tx.vin.length >= 1 && tx.vin[0].value >= 1000">
-          <td style="background-color: #ffa3a0"><strong>Masternode destruction</strong></td>
+          <td style="background-color: #ffa3a0"><strong>Smartnode destruction</strong></td>
           <td class="text-muted text-right">{{tx.vin.length >= 1 && tx.vin[0].value >= 1000}}</td>
         </tr>
         <tr data-ng-show="tx.op_return_message && tx.op_return_message.length > 0">
